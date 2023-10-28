@@ -36,13 +36,13 @@ const MainScreen = ({setAddSong, songArray}) => {
                 }}
               >
                 <div className="SongNameBox">
-                  {!obj.type ? <img src={songImage} alt="song-image"/> : <div />}
+                  {!obj.type ? <img src={songImage} alt=""/> : <div />}
                   <div style={{ marginLeft: "45px" }}>{obj.songName}</div>
                 </div>
                 <div className="Text">{obj.source}</div>
                 <div className="Text">{obj.addedOn}</div>
-                {!obj.type ? <img src={circularPlay} alt="play-button"/> : <div />}
-                {!obj.type ? <img src={deleteImage} alt="delete-image"/> : <div />}
+                {!obj.type ? <img src={circularPlay} alt=""/> : <div />}
+                {!obj.type ? <img src={deleteImage} alt=""/> : <div />}
               </div>
             );
           })}

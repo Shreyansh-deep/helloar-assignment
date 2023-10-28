@@ -16,9 +16,6 @@ const SongPlayerFooter = ({ currentSongName }) => {
     min: "",
     sec: "",
   });
-  const sec = duration / 1000;
-  const min = Math.floor(sec / 60);
-  const secRemain = Math.floor(sec % 60);
   const [seconds, setSeconds] = useState();
 
   useEffect(() => {
