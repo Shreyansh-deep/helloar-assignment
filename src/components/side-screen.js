@@ -8,12 +8,12 @@ const SideScreen = () => {
       <div className="TopBoxSet">
         <div className="TopLogoBox">Logo</div>
         <div className="SecondBox">
-          <img src={sideIcon} />
+          <img src={sideIcon} alt="side-button"/>
           <div style={{ marginLeft: "20px" }}>Songs</div>
         </div>
       </div>
       <div className="BottomBox">
-        <img src={sideLogOut} />
+        <img src={sideLogOut} alt="logout-button"/>
         <div style={{ marginLeft: "15px" }}>Logout</div>
       </div>
     </div>

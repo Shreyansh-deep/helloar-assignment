@@ -2,7 +2,7 @@ import SideScreen from "./side-screen";
 import MainScreen from "./main-screen";
 import "./songPlayer.css";
 import AddSong from "./AddSong";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const songArray = [
   {
@@ -24,7 +24,7 @@ function SongApp() {
 
   const [addSong, setAddSong] = useState(false)
   const [songName, setSongName] = useState("")
-  const [songLink, setSongLink] = useState("")
+  const [, setSongLink] = useState("")
   const [songSource, setSongSource] = useState("")
   const [array, setArray] = useState(songArray)
 

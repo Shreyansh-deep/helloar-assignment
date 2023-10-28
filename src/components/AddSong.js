@@ -1,12 +1,9 @@
 import { Button } from "@mui/material";
-import React, { useRef } from "react";
+import React from "react";
 import { RxCross2 } from "react-icons/rx";
 import "./addSong.css";
 
 const AddSong = ({ setAddSong, setSongName, setSongSource, setSongLink, handleArrayChange }) => {
-  const nameRef = useRef("");
-  const sourceRef = useRef("");
-  const linkRef = useRef("");
 
   return (
     <div>

@@ -2,7 +2,6 @@ import "./App.css";
 import { Navigate, Route, Routes } from "react-router";
 import Auth from "./components/Auth";
 import SongApp from "./components/SongApp";
-import AddSong from "./components/AddSong";
 
 
 function App() {

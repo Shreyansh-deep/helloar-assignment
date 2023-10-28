@@ -5,7 +5,6 @@ import deleteImage from "../assets/delete-image.png";
 import SongPlayerFooterBox from "./song-player-footer";
 import "./songPlayer.css";
 import { Button } from "@mui/material";
-import AddSong from "./AddSong";
 
 const MainScreen = ({setAddSong, songArray}) => {
   const [currentSongName, setCurrentSongName] = useState("");
@@ -37,19 +36,19 @@ const MainScreen = ({setAddSong, songArray}) => {
                 }}
               >
                 <div className="SongNameBox">
-                  {!obj.type ? <img src={songImage} /> : <div />}
+                  {!obj.type ? <img src={songImage} alt="song-image"/> : <div />}
                   <div style={{ marginLeft: "45px" }}>{obj.songName}</div>
                 </div>
                 <div className="Text">{obj.source}</div>
                 <div className="Text">{obj.addedOn}</div>
-                {!obj.type ? <img src={circularPlay} /> : <div />}
-                {!obj.type ? <img src={deleteImage} /> : <div />}
+                {!obj.type ? <img src={circularPlay} alt="play-button"/> : <div />}
+                {!obj.type ? <img src={deleteImage} alt="delete-image"/> : <div />}
               </div>
             );
           })}
         </div>
       </div>
-      // <SongPlayerFooterBox currentSongName={currentSongName} />
+      <SongPlayerFooterBox currentSongName={currentSongName} />
     </div>
   );
 };
